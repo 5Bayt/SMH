@@ -1,0 +1,59 @@
+{
+  "name": "SocialMediaHelper",
+  "version": "1.0.0",
+  "main": "server/server.js",
+  "engines": {
+    "node": ">=4"
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "start": "node .",
+    "posttest": "npm run lint && nsp check"
+  },
+  "dependencies": {
+    "bayes": "0.0.7",
+    "compression": "^1.0.3",
+    "connect-ensure-login": "^0.1.1",
+    "cookie-parser": "^1.4.3",
+    "cors": "^2.5.2",
+    "ejs": "^2.6.1",
+    "express-flash": "0.0.2",
+    "express-session": "^1.15.6",
+    "helmet": "^3.10.0",
+    "jade": "^1.11.0",
+    "loopback": "^3.19.0",
+    "loopback-boot": "^2.6.5",
+    "loopback-component-explorer": "^6.2.0",
+    "loopback-component-oauth2": "^3.2.0",
+    "loopback-component-passport": "^3.10.0",
+    "loopback-connector-mailgun": "0.0.12",
+    "loopback-connector-mongodb": "^1.18.1",
+    "loopback-connector-mysql": "^2.4.1",
+    "mailgun-js": "^0.20.0",
+    "passport": "^0.4.0",
+    "passport-facebook": "^2.1.1",
+    "passport-google-oauth": "^1.0.0",
+    "passport-google-oauth2": "^0.1.6",
+    "passport-local": "^1.0.0",
+    "passport-twitter": "^1.0.4",
+    "prompt": "^1.0.0",
+    "readline-sync": "^1.4.9",
+    "serve-favicon": "^2.0.1",
+    "strong-error-handler": "^3.0.0",
+    "twit": "^2.2.11",
+    "twitter": "^1.7.1",
+    "twitter-stream-api": "^0.5.2",
+    "utf8": "^3.0.0"
+  },
+  "devDependencies": {
+    "eslint": "^3.17.1",
+    "eslint-config-loopback": "^8.0.0",
+    "nsp": "^3.2.1"
+  },
+  "repository": {
+    "type": "",
+    "url": ""
+  },
+  "license": "UNLICENSED",
+  "description": "SocialMediaHelper"
+}

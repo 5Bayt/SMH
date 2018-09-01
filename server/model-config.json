@@ -1,0 +1,70 @@
+{
+  "_meta": {
+    "sources": [
+      "loopback/common/models",
+      "loopback/server/models",
+      "../common/models",
+      "./models",
+      "../node_modules/loopback-component-passport/lib/models"
+    ],
+    "mixins": [
+      "loopback/common/mixins",
+      "loopback/server/mixins",
+      "../common/mixins",
+      "./mixins"
+    ]
+  },
+  "User": {
+    "dataSource": "smhelper"
+  },
+  "tweetStorage": {
+    "dataSource": "smhelper",
+    "public": true
+  },
+  "Operator": {
+    "dataSource": "smhelper",
+    "public": true,
+    "options": {
+      "emailVerificationRequired": true
+    }
+  },
+  "Email": {
+    "dataSource": "mailgun",
+    "public": false
+  },
+  "team": {
+    "dataSource": "smhelper",
+    "public": "true"
+  },
+  "ApplicationCredential": {
+    "dataSource": "smhelper",
+    "public": true
+  },
+  "UserCredential": {
+    "dataSource": "smhelper",
+    "public": true
+  },
+  "UserIdentity": {
+    "dataSource": "smhelper",
+    "public": true
+  },
+  "AccessToken": {
+    "dataSource": "smhelper",
+    "public": false
+  },
+  "RoleMapping": {
+    "dataSource": "smhelper",
+    "public": false,
+    "options": {
+      "strictObjectIDCoercion": true
+    }
+  },
+  "Role": {
+    "dataSource": "smhelper",
+    "public": false
+  },
+  "ACL": {
+    "dataSource": "smhelper",
+    "public": true
+  }
+}

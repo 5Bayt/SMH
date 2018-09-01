@@ -1,0 +1,12 @@
+{
+  "loopback-component-explorer": {
+    "mountPath": "/explorer",
+    "generateOperationScopedModels": true
+  },
+  "loopback-component-oauth2": {
+    "dataSource": "smhelper",
+    "loginPage": "/auth/local",
+    "loginPath": "/auth/local",
+    "addHttpHeaders": "X-"
+  }
+}

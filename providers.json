@@ -1,0 +1,73 @@
+{
+  "local": {
+    "provider": "local",
+    "module": "passport-local",
+    "usernameField": "username",
+    "passwordField": "password",
+    "authPath": "/auth/local",
+    "successRedirect": "/auth/account"
+  },
+  "facebook-login": {
+    "provider": "facebook",
+    "module": "passport-facebook",
+    "profileFields": ["gender", "link", "locale", "name", "timezone", "verified", "email", "updated_time"],
+    "clientID": "{facebook-client-id-1}",
+    "clientSecret": "{facebook-client-secret-1}",
+    "callbackURL": "http://localhost:3000/auth/facebook/callback",
+    "authPath": "/auth/facebook",
+    "callbackPath": "/auth/facebook/callback",
+    "successRedirect": "/auth/account",
+    "scope": ["email"],
+    "authOptions": {
+      "display": "popup"
+    }
+  },
+  "google-login": {
+    "provider": "google",
+    "module": "passport-google-oauth",
+    "strategy": "OAuth2Strategy",
+    "clientID": "923708628568-q44k55htr0fci0ajkb915rlp6elo9j2q.apps.googleusercontent.com",
+    "clientSecret": "CNFIQEjDm-RJ1xf1VlD4fh3c",
+    "callbackURL": "http://localhost:3000/auth/google/callback",
+    "authPath": "/auth/google",
+    "callbackPath": "/auth/google/callback",
+    "successRedirect": "/auth/account",
+    "scope": ["email", "profile"]
+  },
+  "twitter-login": {
+    "provider": "twitter",
+    "authScheme": "oauth",
+    "module": "passport-twitter",
+    "callbackURL": "https://localhost:3000/auth/twitter/callback/",
+    "authPath": "/auth/twitter",
+    "callbackPath": "/auth/twitter/callback",
+    "successRedirect": "/auth/account",
+    "consumerKey": "7chwysuOP1LXKP9wnVffAPtSc",
+    "consumerSecret": "slKWjVN64tYLJN4UZNd9rEhO6oEpXOvdQ7rigJckifsndLafUt"
+  },
+  "facebook-link": {
+    "provider": "facebook",
+    "module": "passport-facebook",
+    "clientID": "{facebook-client-id-2}",
+    "clientSecret": "{facebook-client-secret-2}",
+    "callbackURL": "http://localhost:3000/link/facebook/callback",
+    "authPath": "/link/facebook",
+    "callbackPath": "/link/facebook/callback",
+    "successRedirect": "/link/account",
+    "scope": ["email", "user_likes"],
+    "link": true
+  },
+  "google-link": {
+    "provider": "google",
+    "module": "passport-google-oauth",
+    "strategy": "OAuth2Strategy",
+    "clientID": "{google-client-id-2}",
+    "clientSecret": "{google-client-secret-2}",
+    "callbackURL": "http://localhost:3000/link/google/callback",
+    "authPath": "/link/google",
+    "callbackPath": "/link/google/callback",
+    "successRedirect": "/link/account",
+    "scope": ["email", "profile"],
+    "link": true
+  }
+}

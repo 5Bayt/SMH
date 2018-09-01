@@ -1,0 +1,37 @@
+{
+  "name": "acl",
+  "base": "ACL",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "model": {
+      "type": "string",
+      "required": true
+    },
+    "property": {
+      "type": "string"
+    },
+    "accessType": {
+      "type": "string",
+      "required": true
+    },
+    "permission": {
+      "type": "string",
+      "required": true
+    },
+    "principalType": {
+      "type": "string",
+      "required": true
+    },
+    "principalId": {
+      "type": "string",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}
