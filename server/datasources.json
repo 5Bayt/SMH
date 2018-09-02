@@ -3,16 +3,16 @@
     "host": "localhost",
     "port": 3306,
     "url": "",
-    "database": "smhelper",
-    "password": "12345",
-    "name": "smhelper",
-    "user": "cuneytdalan",
+    "database": "",
+    "password": "",
+    "name": "",
+    "user": "",
     "connector": "mysql"
   },
   "mailgun": {
     "name": "mailgun",
     "connector": "loopback-connector-mailgun",
-    "apikey": "366f1d8318f0675fe2bc81f8b9dc5614-7efe8d73-674e1570",
-    "domain": "sandboxd0eddc8f90d74277a32ad9f1abd01447.mailgun.org"
+    "apikey": "apikey",
+    "domain": "domain.mailgun.org"
   }
 }
