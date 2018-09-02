@@ -7,10 +7,10 @@ const readline = require('readline-sync');
 
 const dataSource = app.dataSources.smhelper;
 
-const TWITTER_CONSUMER_KEY = "7chwysuOP1LXKP9wnVffAPtSc";
-const TWITTER_CONSUMER_SECRET = "slKWjVN64tYLJN4UZNd9rEhO6oEpXOvdQ7rigJckifsndLafUt";
-const ACCESS_TOKEN = "168594561-H0LqefPjYGResfo6pfFU5SkMUcUE85mmGqPDUgqH";
-const ACCESS_TOKEN_SECRET = "giEFOSvq18aEFZ7AaOFoAzQ8aeJICLrp3mb1u7HJnt1cN";
+const TWITTER_CONSUMER_KEY = "TWITTER_CONSUMER_KEY";
+const TWITTER_CONSUMER_SECRET = "TWITTER_CONSUMER_SECRET";
+const ACCESS_TOKEN = "ACCESS_TOKEN";
+const ACCESS_TOKEN_SECRET = "ACCESS_TOKEN_SECRET";
 
 class TwitterStream {
   createTwitterClient() {
