@@ -5,10 +5,10 @@ const User = app.models.operator
 
 let userInfo = {
   realm: "",
-  username: "mcd",
-  email: 'cuneytdalan17@gmail.com',
+  username: "",
+  email: "",
   emailVerified: true,
-  password: "12345"
+  password: ""
 };
 
 class UserOperations {
