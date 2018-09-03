@@ -90,7 +90,7 @@ You can use POST /Users endpoint with provided user properties.
 * User Login \
 You can use POST /Users/login endpoint to login the application after returns an id. That id is your accesstoken. Access token can be set from top right of the page. While you loging in use email or username and password.
 
-* Transfer User Model to Database \
+* [Transfer User Model to Database](https://github.com/cuneytdalan/SMH/blob/master/README.md#adding-dummy-data-to-database) \
 Automigrate function can be use to transfer user model.
 
 * Create a User Create Method\
