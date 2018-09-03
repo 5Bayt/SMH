@@ -84,16 +84,16 @@ let userInfo = {
   password: ""
 };
 ```
-* How to POST user?
+* How to POST user? \
 You can use POST /Users endpoint with provided user properties.
 
-* User Login
+* User Login \
 You can use POST /Users/login endpoint to login the application after returns an id. That id is your accesstoken. Access token can be set from top right of the page. While you loging in use email or username and password.
 
-* Transfer User Model to Database 
+* Transfer User Model to Database \
 Automigrate function can be use to transfer user model.
 
-* Create a User Create Method
+* Create a User Create Method\
 On my project the "createUser" method created in the class which the user actions are to be made allows the user to be created. In this method, the Autoupdate function is used to update the database via datasource as well as the automigrate function used to add previously created models to the database. 
 ```javascript
 createUser(userInfo) {
