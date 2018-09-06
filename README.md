@@ -155,3 +155,19 @@ createUser(userInfo) {
     Not allowed to write data on tweetStorage table.
     
     #### Creating Role Methods
+    In the project in createAuth.s file under the createAuth class there is a method named createRole. There need to two models which are RoleMapping and Role models that will help to create new User Role. 
+    Role and RoleMapping have properties below.
+    ##### Role
+    | id            | name          | description | created           | modified          |
+    | ------------- |:-------------:|:-----------:|:-----------------:|:-----------------:|
+    |       2       |    guest      |             |2018-08-28 11:51:05|2018-08-28 11:51:05| 
+    ##### RoleMapping
+    | id            | principalType | principalId | roleId            |
+    | ------------- |:-------------:|:-----------:|:-----------------:|
+    |       2       |    USER       |      1      |         2         |
+     
+    #### !!! The ACL's should have been defined for role.
+    
+    On Role table create illustrates when role created and modified shows that when that role updated.
+    On the RoleMapping table principalType shows that type of model type that will have that role and principalId indicates the id of user. 
+    
