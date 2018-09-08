@@ -170,4 +170,25 @@ createUser(userInfo) {
     
     On Role table create illustrates when role created and modified shows that when that role updated.
     On the RoleMapping table principalType shows that type of model type that will have that role and principalId indicates the id of user. 
-    
+    ```javascript
+    createRole() {
+      const Role = app.models.Role;
+      const RoleMapping = app.models.RoleMapping;
+      
+            app.models.Operator.find({where: {username: req.body.username}}, function (err, operators) {
+            if (err) cb(err);
+            console.log(operators);
+            Role.findOrCreate({
+              name: userrole
+            }, function (err, role) {
+              if (err) throw err;
+              role.principals.create({
+                principalType: RoleMapping.USER,
+                principalId: operators[0].id
+              }, function (err, principal) {
+              });
+            });
+          });
+
+    };
+    ```
